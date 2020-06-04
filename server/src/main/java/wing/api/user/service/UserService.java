@@ -1,17 +1,39 @@
 package wing.api.user.service;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import wing.api.user.domain.user.UserRepository;
+import org.springframework.transaction.annotation.Transactional;
+import wing.api.user.client.SupportedArtistClient;
+import wing.api.user.domain.User;
+import wing.api.user.domain.UserRepository;
+import wing.api.user.web.dto.UserRequestDto;
 
+import java.util.List;
+
+@RequiredArgsConstructor
 @Service
 public class UserService {
-    @Autowired
-    private UserRepository userRepository;
+    private final UserRepository userRepository;
+    SupportedArtistClient supportedArtistClient;
 
-    // 유저 등록
-    
-    // 유저가 좋아요 한 음악
-    
+    // 유저 등록 -> 리액트와 연동
+    @Transactional
+    public String save(UserRequestDto userRequestDto) {
+        userRepository.save(userRequestDto.toEntity());
+        return userRequestDto.getName();
+    }
+    // 모든 유저 조회 -> findAll
+    public List<User> findAll(){
+        return userRepository.findAll();
+    }
+
+    // 개별 유저 조회 -> findById
+    public User findByUserId(String userId){
+        return userRepository.findByUserId(userId);
+    }
+
+
+    // 유저가 좋아요 한 음악 -> 외부에 있는 음악 DB와 연동?
+
     // 유저가 후원한 아티스트
 }
