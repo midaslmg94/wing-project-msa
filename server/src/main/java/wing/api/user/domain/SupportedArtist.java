@@ -6,13 +6,10 @@ import lombok.Setter;
 @Getter
 @Setter
 public class SupportedArtist {
-    private String id;
-    private String userId;
-    private String artistId;
-    private String amount;
+    private int amount;
     private String datetime;
-    private String uid;
 
-    // 추가로 원하는 값
-    private String artistName;
+//    // 추가로 원하는 값
+//    private String artistName;
+//    private String useName;
 }
