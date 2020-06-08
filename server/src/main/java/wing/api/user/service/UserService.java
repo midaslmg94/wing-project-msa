@@ -26,11 +26,11 @@ public class UserService {
     // 모든 유저 조회 -> findAll
     public List<User> findAll(){
         List<User> userList = userRepository.findAll();
-        for (User user : userList) {
-            System.out.println("hello"+user.getUserId());
-            System.out.println("========================");
-            //user.withSupportedArtistList(supportedArtistClient.getSupportList(user.getUserId()));
-        }
+//        for (User user : userList) {
+//            System.out.println("hello"+user.getUserId());
+//            System.out.println("========================");
+//            //user.withSupportedArtistList(supportedArtistClient.getSupportList(user.getUserId()));
+//        }
         return userList;
     }
 
