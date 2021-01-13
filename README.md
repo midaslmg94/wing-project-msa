@@ -1,6 +1,6 @@
 
 
-![image-20210114010350254](C:\Users\leeminki\Desktop\새 폴더\wing-project-msa\images\image-20210114010350254.png)
+![image-20210114010350254](./images/image-20210114010350254.png)
 
 ## 						Win:G 인디 음악 홍보 플랫폼
 
