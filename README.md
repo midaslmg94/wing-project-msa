@@ -1,9 +1,12 @@
 
 
-![image-20210114010350254](./images/image-20210114010350254.png)
+## Win:G 인디 음악 홍보 플랫폼
 
-## 						Win:G 인디 음악 홍보 플랫폼
+<p align="center">
+    <img src = "./images/image-20210114010350254.png">
+</p>
 
+<br>
 
 
 2019년 12월 ~ 2020년 6월까지 진행한 멀티캠퍼스 마이크로서비스 전문가 양성과정에서 진행한 최종 프로젝트입니다.
@@ -16,10 +19,9 @@
 ## 프로젝트 기획 배경 및 목표
 
 <br>
-
-![image-20210114010530047](./images/image-20210114010530047.png)
-
-
+<p align="center">
+    <img src = "./images/image-20210114010530047.png">
+</p>
 <br>
 
 마이크로서비스 전문가 양성과정을 통해 배운 Infra, Front-end, Back-end, CI/CD 내용을 충실히 반영하며, 마이크로서비스 아키텍처에 적합한 Win:G 프로젝트를 기획하였습니다. Win:G란 뮤지션들에게 날개를 달아준다는 뜻의 Wing과 목표를 이루는 이룬다는 뜻의 Win + Goal을 합쳐서 만들었습니다.
@@ -39,7 +41,7 @@
 
 <br>
 
-## 협업에 사용된 도구
+### 협업에 사용된 도구
 
 메시지 채널은 `Slack` 을 이용하였습니다. 문제나 궁금증에 관해 묻거나 기술 적용에 있어서 참고하면 좋은 팁 등을 공유하는 용도로 사용하였습니다. 
 
@@ -47,15 +49,21 @@
 
 <br>
 
+> Confluence
+
+<br>
+<p align="center">
+    <img src = "./images/image-20210114011614833.png">
+</p>
+<br>
+
 **Confluence**를 통해 개발과정에서 나오는 이슈 해결법, 기술 공유, 회의록 등을 문서화하여, 정리하고 기록하는 팀 문화가 정착되도록 했습니다.
 
 <br>
 
-![image-20210114011614833](./images/image-20210114011614833.png)
-
  
-<br>
 
+> Jira
 
 **Jira**를 사용하여 이슈트래킹을 했습니다. 
 
@@ -63,33 +71,41 @@
 
 <br>
 
-![image-20210114011647424](./images/image-20210114011626907.png)
-
+<p align="center">
+    <img src = "./images/image-20210114011626907.png">
+</p>
 
 
 <br>
+
+
+<p align="center">
+    <img src = "./images/image-20210114011755051.png">
+</p>
+
 
  일정을 4개의 스프린트로 나누어 관리하였고 각 단계별로 해야할 작업을 구분하여 완성했습니다
 
-![image-20210114011755051](./images/image-20210114011755051.png)
+ - 1차 스프린트 : 프로토타이핑, 다이어그램 작성
+ - 2차 스프린트 : 모놀리식 MVP 개발
+ - 3차 스프린트 : MicroService Migration
+ - 4차 스프린트 : CI/CD 및 최종 보고서 작성 
 
 
 <br>
 
+> github
 
 형상 관리 도구로는 **GitHub**를 사용하였습니다. 
 
 프로젝트 중 업무를 나눠 작업하고 합칠 때 GitHub를 통해 pull request, 코드 확인, 승인의 흐름을 따라 충돌을 최소화하였습니다.
 
+<p align="center">
+    <img src = "./images/image-20210114011401847.png">			
+</p>
+
+
 <br>
-
-​							![image-20210114011446075](./images/image-20210114011401847.png)			
-
-<br>
-
-프로젝트 진행에 대해서 멘토님께 조언을 받거나 진행 상황을 체크할 때 Zoom을 이용해 화상회의로 진행했습니다.
-
-
 <br>
 
 ## 아키텍처
@@ -98,9 +114,9 @@
 
 ### MSA 아키텍처
 
-<br>
-
-![image-20210114011832812](./images/image-20210114011832812.png)
+<p align="center">
+    <img src = "./images/image-20210114011832812.png">
+</p>
 
 <br>
 
@@ -116,11 +132,10 @@ Win:G 서비스를 MSA 구조로 설계했습니다. 3개의 GCP VM 인스턴스
 <br>
 
 ### 프로젝트 구조도
-
 <br>
-
-![image-20210114011957968](./images/image-20210114011957968.png)
-
+<p align="center">
+    <img src = "./images/image-20210114011957968.png">
+</p>
 
 <br>
 
@@ -135,12 +150,12 @@ Win:G 서비스를 MSA 구조로 설계했습니다. 3개의 GCP VM 인스턴스
 ### CI/CD Pipeline
 
 <br>
-
-![image-20210114011840994](./images/image-20210114011840994.png)
-
+<p align="center">
+    <img src = "./images/image-20210114011840994.png">
+</p>
 <br>
 
-**Jenkins**와 **Docker Swarm**을 사용하여 CI(빌드 자동화)와 CD(배포 자동화)를 구축했습니다.
+**Jenkins**와 **Docker Swarm**을 사용하여 CI(빌드 자동화">와 CD(배포 자동화">를 구축했습니다.
 
 GitHub에 push를 하면 Jenkins에서 test와 build 과정이 실행됩니다. 
 
@@ -154,9 +169,9 @@ CI 프로세스를 통과한 코드는 각 서비스가 가지고 있는 Docker 
 ### Docker Swram - Visualizer
 
 <br>
-
-![image-20210114011848815](./images/image-20210114011848815.png)
-
+<p align="center">
+    <img src = "./images/image-20210114011848815.png">
+</p>
 
 
 Visualizer를 이용해서 스웜 클러스터에 컨테이너 그룹이 배치된 모습을 시각화하였습니다.
@@ -169,16 +184,16 @@ Visualizer를 이용해서 스웜 클러스터에 컨테이너 그룹이 배치�
 
 ### RESTful API - Swagger
 
-Swagger를 이용해 개발과 동시에 인터페이스에 필요한 엔드포인트, 요청 및 응답 문서의 형식을 쉽게 확인, 참조할 수 있도록 했습니다
+
 
 <br>
+<p align="center">
+    <img src = "./images/image-20210114011925208.png">
+    <img src = "./images/image-20210114011932394.png">
+    <img src = "./images/image-20210114011939346.png">
+</p>
 
-![image-20210114011925208](./images/image-20210114011925208.png)
-
-![image-20210114011932394](./images/image-20210114011932394.png)
-
-![image-20210114011939346](./images/image-20210114011939346.png)
-
+Swagger를 이용해 개발과 동시에 인터페이스에 필요한 엔드포인트, 요청 및 응답 문서의 형식을 쉽게 확인, 참조할 수 있도록 했습니다
 
 <br>
 
@@ -186,20 +201,21 @@ Swagger를 이용해 개발과 동시에 인터페이스에 필요한 엔드포�
 ## 기대효과
 
 <br>
-
-![image-20210114012525087](./images/image-20210114012525087.png)
-
-
-
+<p align="center">
+    <img src = "./images/image-20210114012525087.png">
+</p>
 <br>
+
 <br>
 
 ## 향후 개선사항
 
+<br>
+<p align="center">
+    <img src = "./images/image-20210114012443720.png">
+</p>
+
+
 COVID-19로 인해 프로젝트 기간이 2개월에서 1개월로 단축되어 전체 개발 범위를 2단계로 나눴습니다. 
 
 1단계에 적용할 기술 및 서비스들은 구현을 완료하였으며, 향후 2단계에서 적용할 내용을 기술적, 서비스 관점에서 정리해 보았습니다. 
-
-<br>
-
-![image-20210114012443720](./images/image-20210114012443720.png)
