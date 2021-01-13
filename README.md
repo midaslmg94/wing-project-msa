@@ -155,7 +155,7 @@ Win:G 서비스를 MSA 구조로 설계했습니다. 3개의 GCP VM 인스턴스
 </p>
 <br>
 
-**Jenkins**와 **Docker Swarm**을 사용하여 CI(빌드 자동화">와 CD(배포 자동화">를 구축했습니다.
+**Jenkins**와 **Docker Swarm**을 사용하여 CI와 CD를 구축했습니다.
 
 GitHub에 push를 하면 Jenkins에서 test와 build 과정이 실행됩니다. 
 
